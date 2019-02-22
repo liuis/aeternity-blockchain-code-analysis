@@ -13,5 +13,7 @@ aeternity : https://github.com/aeternity/aeternity
 
   编译  make prod-build
 
+3.如果想了解aenetiny的如何安装和创建aenetiny node 
+可以查看docs 官方文档
 
 
