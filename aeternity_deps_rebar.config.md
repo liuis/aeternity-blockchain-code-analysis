@@ -29,22 +29,33 @@ Exometer Core带有一组预定义的监视器组件，可以使用自定义组�
 
  {exometer_core, "1.5.7"},
  {poolboy, "1.5.1"},
+ 
  YAML 1.2 and JSON parser in pure Erlang
+ 
  {yamerl, "0.7.0"},
+ 
  Erlang performance and debugging tools
+ 
  {eper, "0.99.1"},
 
  {lager, {git, "https://github.com/erlang-lager/lager.git",
          {ref, "69b4ada"}}}, % tag: 3.6.7
+ 
  {cowboy, {git, "https://github.com/ninenines/cowboy.git",
           {ref, "8d49ae3"}}}, % tag: 2.2.2"
+
 Sortable Erlang Term Serialization
+
 {sext, {git, "https://github.com/uwiger/sext.git",
         {ref, "615eebc"}}},
- 应用程序中的国际化域名
+
+应用程序中的国际化域名
+
  {idna, {git, "https://github.com/benoitc/erlang-idna",
         {ref, "6cff727"}}}, % tag: 6.0.0
+        
  Network Address Translation Port Mapping Protocol
+ 
  {nat, {git, "https://github.com/aeternity/erlang-nat.git",
        {ref, "dcdfb9c"}}},
 
@@ -62,7 +73,9 @@ Sortable Erlang Term Serialization
  Aeternity virtual machines byte code modules
  {aebytecode, {git, "https://github.com/aeternity/aebytecode.git",
               {ref,"99bf097"}}},
+              
  内置的虚拟机语言
+ 
  {aesophia, {git, "https://github.com/aeternity/aesophia.git",
               {ref,"b61e3270f91129667d5948c4e0ce4b214a9d180c"}}},
 
