@@ -3,7 +3,7 @@ aeternity-blockchain-code-analysis
 
 aeternity : https://github.com/aeternity/aeternity
 
-###一.环境
+### 一.环境
 1.kerl  build 21.2
 
      . /Users/USERSXXXX/kerl/otp_21.2/activate  
@@ -18,7 +18,7 @@ aeternity : https://github.com/aeternity/aeternity
 可以查看docs 官方文档
 
 
-###二.目录结构
+### 二.目录结构
 
 ae_app: 核心代码
 
