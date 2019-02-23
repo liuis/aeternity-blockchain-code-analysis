@@ -11,9 +11,18 @@ aeternity : https://github.com/aeternity/aeternity
 
 2.aenetiny v 1.4.0 
 
-  编译  make prod-build
+编译  make prod-build
 
 3.如果想了解aenetiny的如何安装和创建aenetiny node 
 可以查看docs 官方文档
+
+
+
+ae_app: 核心代码
+
+protocol：核心技术文档，用来替代过时的白皮书
+
+docs: aeternity 官方文档
+
 
 
