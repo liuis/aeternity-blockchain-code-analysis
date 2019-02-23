@@ -159,13 +159,13 @@ It is the responsibility of aec_peers to handle that a connection
 
 
 aec_peer_connection_sup   ----->outgoing connections ------>
-			simple_one_for_one --->  												    aec_peer_connection/模块封装一个P2P通信通道
+​			simple_one_for_one --->  												    aec_peer_connection/模块封装一个P2P通信通道
 
 aec_tx_pool_sync
 
 模块持有一个短暂的缓存为gossip TX  - 理由因为大多数TX到达时间接近，因此mempool / DB
   可以通过第一级过滤器卸载。
-  
+
 aec_tx_gossip_cache
 
 aec_peers
