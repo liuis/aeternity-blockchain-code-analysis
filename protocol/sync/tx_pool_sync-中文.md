@@ -24,7 +24,7 @@ The P2P messages used are listed in [p2p_messages](./p2p_messages.md).
 
 在启动时，Aeternity节点需要更新（或者从头开始，如果它是
 全新的节点）其未经证实的交易清单。它的新交易
-将通过gossip，但通过建设旧的交易（for some reason）没有把它放到链条上没有gossiped。
+将通过gossip，但通过构建没有把它放到链条上没有gossiped的旧的交易（for some reason）。
 
 可能存在的交易清单之间存在很大的重叠
 起始节点（事务是持久的）和正在同步的对等体
