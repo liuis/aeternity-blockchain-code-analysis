@@ -24,8 +24,7 @@ The P2P messages used are listed in [p2p_messages](./p2p_messages.md).
 
 在启动时，Aeternity节点需要更新（或者从头开始，如果它是
 全新的节点）其未经证实的交易清单。它的新交易
-将通过gossip，但通过建设旧的交易（对于一些人
-原因）没有把它放到链条上没有gossiped。
+将通过gossip，但通过构建没有把它放到链条上没有gossiped的旧的交易（for some reason）。
 
 可能存在的交易清单之间存在很大的重叠
 起始节点（事务是持久的）和正在同步的对等体
@@ -33,12 +32,16 @@ The P2P messages used are listed in [p2p_messages](./p2p_messages.md).
 交易。协议很简单：
 
 1.节点选择一个peer进行同步
+
 2.他们每人创建一个MP树，持有他们的本地交易 - 在MP
 树，每个元素都具有签名事务的哈希值和密钥
 （占位符）值空列表。
+
 3.发起者要求peer's tree的部分展开
+
 4.启动器计算它不知道的树的哪些部分和
 要么回到3.并要求进一步的信息，或
+
 5.发起人要求丢失交易。
 
 使用的P2P消息列在p2p_messages中。
