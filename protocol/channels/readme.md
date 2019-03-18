@@ -168,9 +168,7 @@
 
 ## 协议
 
-关键词“必须”，“绝不”，“必须”，“应该”，“不要”，“应该”，
-本文档中的“不应该”，“推荐”，“可能”和“可选”应为
-解释如[RFC 2119]（https://tools.ietf.org/html/rfc2119）中所述。
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
 
 
 ### 沟通
