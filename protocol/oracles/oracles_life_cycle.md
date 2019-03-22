@@ -1,4 +1,3 @@
-[返回](./ oracles.md)
 ## Oracle生命周期示例
 
 ### 足球比赛结果的 oracle
