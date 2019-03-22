@@ -59,7 +59,7 @@ oracle运算符可以扩展现有oracle的TTL。
 
 请参阅[序列化规范]（/ serializations.md #oracle-query-transaction）。
 
-####问题/Later
+#### 问题/Later
 
  - 我们可以包括一个最早的时间，oracle可以回答，以防止恶意的oracles提前回答并收取费用。
 
@@ -82,7 +82,7 @@ oracle支付回复交易的费用。 最小费用由查询的响应TTL和响应�
 
 请参阅[序列化规范]（/ serializations.md #oracle-response-transaction）。
 
-####问题/later
+#### 问题/later
 
  - 我们应该在查询中定义自动回调吗？
    - 任何回调都由oracle支付。
