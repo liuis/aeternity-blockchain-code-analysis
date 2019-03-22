@@ -1,12 +1,6 @@
-[返回]（./ oracles.md）
 ## Oracle状态树
 
-oracle状态树包含oracle对象和oracle查询对象。该
-存在一个oracle并且必须存在查询/响应
-两方签约时证明了这一点。神谕和疑问是
-存储在同一棵树上;其中查询的id是串联的id
-oracle id和查询id。因此，查询实际上形成了一个子树
-oracle并且可以迭代等等
+oracle状态树包含oracle对象和oracle查询对象。 当双方相互契约时，必须证明存在oracle和查询/响应的存在。 oracle和查询存储在同一棵树中; 其中查询的id是oracle id和查询id的串联。 因此，查询实际上形成了oracle的子树，可以迭代，等等。
 
 ### Oracle状态树对象
 
@@ -50,34 +44,29 @@ oracle查询事务中的TTL。如果/当oracle响应事务是
 ，response :: oracle_response（）
 ，expires :: block_height（）
 ，response_ttl :: relative_ttl（）
-，费用::整数（）
+，fee::integer（）
 }
 ```
 
 ### Oracle状态树更新
 
-当到达对象的TTL时，将修剪oracle状态树
-链的高度。我们将操作顺序定义为：
+当到达对象的TTL时，将修剪oracle状态树链的高度。我们将操作顺序定义为：
 
 1.删​​除过期的对象。应按ID的升序删除对象。
 2.在块的事务顺序中插入新对象。
 
-请注意，ID的排序顺序与顺序相同
-遍历树。
+请注意，ID的排序顺序与树的顺序遍历相同。
 
 ###处理对象的TTL
 
-我们将保留按TTL和ID排序的对象缓存。这样的缓存
-有好处：
+我们将保留按TTL和ID排序的对象缓存。这样的缓存有下列好处：
  - 要删除的下一个对象是缓存中的第一个对象。
    -  TTL低于块高度 - >我们完成了。
    -  TTL等于块高度 - >删除对象。
- - 可以通过执行有序遍历来重建缓存
-  oracle状态树。
+ - 可以通过执行有序遍历来重建缓存oracle状态树。
 
 ###修剪oracle查询对象
 
-如果oracle查询没有给出响应，那么海报就是
-查询应该退还oracle查询费。如果神谕有
-回应，oracle已经在响应时获得了资金。
+
+如果oracle查询没有给出响应，则查询的poster应该退还oracle查询费用。 如果oracle已经做出回应，那么oracle已经在响应时获得了资金。
 
